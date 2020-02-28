@@ -69,7 +69,7 @@ try {
       stdio: 'inherit',
       env: process.env
   }
-  execSync('sudo --preserve-env aio app deploy', options)
+  execSync('sudo --preserve-env aio app deploy --skip-build', options)
 
 } catch (error) {
   core.setFailed(error.message)
