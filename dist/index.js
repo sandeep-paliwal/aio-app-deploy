@@ -59,6 +59,7 @@ const execSync = __webpack_require__(129).execSync
 try {
   const namespace = core.getInput('AIO_RUNTIME_NAMESPACE');
   const auth = core.getInput('AIO_RUNTIME_AUTH')
+  
   if(!namespace || !auth)
     throw new Error("AIO_RUNTIME_NAMESPACE and AIO_RUNTIME_AUTH must be passed to the action")
 
